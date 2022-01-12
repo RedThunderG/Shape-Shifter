@@ -1,6 +1,0 @@
-{
-  "type": "origins:walk_on_fluid",
-  "fluid": "minecraft:lava",
-  "name": "Walk On Lava",
-  "description": "You can walk on lava"
-}

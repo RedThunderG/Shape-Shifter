@@ -1,9 +1,0 @@
-{
-  "type": "origins:creative_flight",
-  "condition": {
-    "type": "origins:dimension",
-    "dimension": "minecraft:the_nether"
-  },
-  "name": "Hot Air Balloon",
-  "description": "You can fly freely in the nether"
-}
