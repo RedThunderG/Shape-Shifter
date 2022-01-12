@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "amoeba_origin:manifest",
+    "amoeba_origin:impersonate"
+  ],
+  "icon": "minecraft:packed_ice",
+  "order": 1,
+  "impact": 3,
+  "name": "Shape Shifter",
+  "description": "To assume the shape of those you see"
+}

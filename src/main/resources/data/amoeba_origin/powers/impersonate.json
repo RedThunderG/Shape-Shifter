@@ -1,0 +1,54 @@
+{
+  "name": "Impersonate",
+  "description": "Steal the skin and name of the person you become",
+  "type": "origins:multiple",
+
+  "impersonate": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "permission_level": 4,
+      "command": "execute as @s run impersonate disguise as @p[distance=1..8]"
+    },
+    "cooldown": 200,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+      "bar_index": 16
+    },
+    "key": {
+      "key": "key.origins.primary_active",
+      "continuous": false
+    }
+  },
+
+  "effectgive": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "permission_level": 4,
+      "command": "effect give @s luck 10 1 true"
+    },
+    "cooldown": 200,
+    "key": {
+      "key": "key.origins.primary_active",
+      "continuous": false
+    }
+  },
+
+  "forcedoffarmor": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "permission_level": 4,
+      "command": "execute as @s run impersonate disguise clear"
+    },
+    "interval": 1,
+    "condition": {
+      "type": "origins:status_effect",
+      "effect": "minecraft:luck",
+      "min_amplifier": 0,
+      "inverted": true
+    }
+  }
+}
