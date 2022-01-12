@@ -35,6 +35,10 @@ repositories {
     maven {
         url "https://maven.terraformersmc.com/"
     }
+    maven {
+        name "impersonate"
+        url "https://oss.sonatype.org/content/repositories/snapshot"
+    }
 }
 
 dependencies {
